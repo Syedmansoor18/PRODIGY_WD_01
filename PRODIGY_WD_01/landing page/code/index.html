@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../images/logo.png" type="image">
+    <title>theni spice haven</title>
+</head>
+<body>
+    
+    <section id="Home">
+        <div class="circle"></div>
+        <header>
+         
+            <a href="#" class="logo"><img src="../images/logo.png"></a>
+            <ul>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#About" id="about">About</a></li>
+                <li><a href="#services" >Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Experience Biriyani Bliss<br><span>Spice Haven</span></h2>
+                <p>"Discover the essence of Theni's culinary heritage at our biryani haven, where each dish is a symphony of aromatic spices and premium ingredients, creating an unparalleled dining experience."</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="imgbox">
+                <img src="../images/thumb1.png" class="Biriyani">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="../images/thumb1.png"class="chicken" onclick="imgSlider('../images/thumb1.png')"></a></li>
+            <li><a href="#"><img src="../images/thumb2.png" onclick="imgSlider('../images/thumb2.png')"></a></li>
+            <li><a href="#"><img src="../images/thumb3.png" onclick="imgSlider('../images/thumb3.png')"></a></li>
+        </ul>
+        
+    </section>
+    <section class="about" id="About">
+        <div class="about_bg">
+            <div class="about_container">
+                <h2 class="section__title">
+                    Our History
+                </h2></div>
+                <div class="about_data">
+                    <img src="../images/img1.png" alt="about image" class="about__img"> 
+                   
+                    <p class="about_description">
+                        Our restaurant's website traces its roots back to 2005, a digital cornerstone established to showcase our culinary passion and welcoming ambiance. Over the years, it evolved from a simple online presence to a dynamic platform, offering menus, reservations, and updates on events. Embracing technological advancements, we integrated user-friendly features for seamless browsing on various devices. Continuously adapting, our website became a hub for culinary exploration, embodying our commitment to innovation and customer satisfaction. Today, it stands as a testament to our journey, bridging the gap between delectable flavors and digital convenience, inviting patrons to embark on a gastronomic adventure with us.
+                       <br>
+                        <button class="read">Read More</button>
+                    
+                    </p>
+                    
+                
+                </div>
+                
+            
+        </div>
+        
+        
+    </section>
+    <section class="branch" id="services">
+        <div class="branch_bg">
+            <h2 class="section__title">
+                Our Branches
+            </h2>
+            <div class="branch_container">
+                <div class="branch_content">
+                    <div class="branch_card">
+                        <div class="branch_circle">
+                            <div class="branch_subcircle">
+                                01
+                            </div>
+                            <img src="../images/theni.jpg" alt="branch image" class="branch_img">
+                        </div>
+                        <p class="branch_description">
+                            Hyderabad
+                        </p>
+                    </div>
+                    <div class="branch_card">
+                        <div class="branch_circle">
+                            <div class="branch_subcircle">
+                                02
+                            </div>
+                            <img src="../images/madurai.jpg" alt="branch image" class="branch_img">
+                        </div>
+                        <p class="branch_description">
+                            Medak
+                        </p>
+                    </div>
+                    <div class="branch_card">
+                        <div class="branch_circle">
+                            <div class="branch_subcircle">
+                                03
+                            </div>
+                            <img src="../images/chennai.jpg" alt="branch image" class="branch_img">
+                        </div>
+                        <p class="branch_description">
+                            Kamareddy
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="contact" id="Contact">
+            <div class="container">
+                <h2> Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h3>Send us a message</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your email id">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="your message"></textarea>
+                            </div>
+                            <button type="submit">send message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact information</h3>
+                        <p><i class="fa-solid fa-phone"></i> +91 8008636344</p>
+                        <p><i class="fa-solid fa-envelope"></i> tthanusmasweety@gmail.com</p>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="#"><img src="../images/facebook.png"></a></li>
+                    <li><a href="#"><img src="../images/instagram.png"></a></li>
+                    
+                </ul>
+            </div>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky",window.scrollY > 0);
+            })
+            </script>
+            <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.Biriyani').src =anything;
+            }
+            
+            </script>
+
+        
+    
+</body>
+</html>
